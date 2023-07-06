@@ -395,6 +395,10 @@ form .btn2 {
     font-size: 30px;
   }
 
+  .fa-solid.fa-bars {
+    color: #444444;
+  }
+
   .fas.fa-times-circle,
   .fa-solid.fa-bars {
     display: block;
