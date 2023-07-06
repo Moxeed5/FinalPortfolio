@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #080808;
   color: #fff;
@@ -40,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #fff;
+  color: #444444;
   text-decoration: none;
   font-size: 25px;
   position: relative;
@@ -370,6 +374,13 @@ form .btn2 {
   display: none;
 }
 
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+  text-align: center;
+}
+
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url(../images/images/vulcan.PNG);
@@ -446,5 +457,21 @@ form .btn2 {
 
   .copyright {
     font-size: 14px;
+  }
+
+  #msg {
+    color: #61b752;
+    display: block;
+    text-align: center;
+  }
+
+  form .btn2 {
+    padding: 14px 60px;
+    border: 0;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    cursor: pointer;
+    margin-left: 20px;
   }
 }
