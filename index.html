@@ -129,7 +129,7 @@
               impedit molestiae dolorem aliquam tenetur? Itaque iure
               voluptatibus labore adipisci reprehenderit?
             </p>
-            <a href="#">Learn more</a>
+            <a href="#contact">Learn more</a>
           </div>
           <div>
             <i class="fab fa-app-store"></i>
@@ -140,7 +140,7 @@
               impedit molestiae dolorem aliquam tenetur? Itaque iure
               voluptatibus labore adipisci reprehenderit?
             </p>
-            <a href="#">Learn more</a>
+            <a href="#contact">Learn more</a>
           </div>
           <div>
             <i class="fas fa-crop-alt"></i>
@@ -151,7 +151,7 @@
               impedit molestiae dolorem aliquam tenetur? Itaque iure
               voluptatibus labore adipisci reprehenderit?
             </p>
-            <a href="#">Learn more</a>
+            <a href="#contact">Learn more</a>
           </div>
         </div>
       </div>
@@ -294,11 +294,15 @@
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
+        let btn2 = document.querySelector("form .btn2"); // Add this line to get the button
+        btn2.style.animation = "bounce 1s infinite"; // Add this line to start the animation
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
-            msg.innerHTML = "Message sent succesfully";
+            btn2.style.animation = "none"; // Add this line to stop the animation
+            msg.innerHTML = "Message sent successfully";
             setTimeout(function () {
               msg.innerHTML = "";
+              // No need to restart the animation after the message disappears
             }, 5000);
             form.reset();
           })
