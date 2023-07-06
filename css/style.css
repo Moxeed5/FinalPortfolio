@@ -424,6 +424,13 @@ form .btn2 {
     cursor: pointer;
   }
 
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+  }
+
   .sub-title {
     font-size: 40px;
   }
