@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Max Morgan Codes</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script
       src="https://kit.fontawesome.com/d90db745a5.js"
       crossorigin="anonymous"
@@ -30,7 +31,12 @@
           </ul>
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <div class="header-text">
+        <div
+          class="header-text"
+          data-aos="fade-up"
+          data-aos-delay="250"
+          data-aos-duration="600"
+        >
           <p>Web & Software Developer</p>
           <h1>Hi, I'm <span>Max</span> Morgan</h1>
         </div>
@@ -47,8 +53,15 @@
             />
           </div>
           <div class="about-col-2">
-            <h1 class="sub-title">About Me</h1>
-            <p>
+            <h1
+              class="sub-title"
+              data-aos="zoom-in"
+              data-aos-duration="1000"
+              data-aos-delay="150"
+            >
+              About Me
+            </h1>
+            <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
               earum dolore modi quia ipsum harum illo provident. Ex cupiditate
               officia harum, tempore ab fugiat quibusdam distinctio a impedit,
@@ -120,7 +133,7 @@
       <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
-          <div>
+          <div data-aos="fade-left" data-aos-delay="0">
             <i class="fas fa-code"></i>
             <h2>Web <br />Development</h2>
             <p>
@@ -131,7 +144,7 @@
             </p>
             <a href="#contact">Learn more</a>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-delay="200">
             <i class="fab fa-app-store"></i>
             <h2>Software Development</h2>
             <p>
@@ -142,7 +155,7 @@
             </p>
             <a href="#contact">Learn more</a>
           </div>
-          <div>
+          <div data-aos="fade-left" data-aos-delay="400">
             <i class="fas fa-crop-alt"></i>
             <h2>UI/UX</h2>
             <p>
@@ -307,6 +320,12 @@
             form.reset();
           })
           .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
       });
     </script>
   </body>
