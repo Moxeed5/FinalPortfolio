@@ -399,7 +399,7 @@ form .btn2 {
 
 @media only screen and (max-width: 600px) {
   #header {
-    background-image: url(../images/images/vulcanOne.jpg);
+    background-image: url(../images/images/vulcanOne.min.jpg);
   }
 
   .header-text {
