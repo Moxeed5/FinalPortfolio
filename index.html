@@ -34,7 +34,7 @@
         <div
           class="header-text"
           data-aos="fade-up"
-          data-aos-delay="250"
+          data-aos-delay="0"
           data-aos-duration="600"
         >
           <p>Web & Software Developer</p>
@@ -62,18 +62,14 @@
               About Me
             </h1>
             <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
-              earum dolore modi quia ipsum harum illo provident. Ex cupiditate
-              officia harum, tempore ab fugiat quibusdam distinctio a impedit,
-              quod iste repellat ut sapiente nisi dolore assumenda magni qui
-              perspiciatis tenetur commodi maiores possimus delectus? Similique,
-              vero necessitatibus omnis culpa voluptatum ea? Magnam aut ipsa
-              eaque repellendus cumque aliquid, aperiam quas non, sint numquam
-              totam. Quod recusandae aliquam eius quisquam velit laboriosam
-              enim? Ipsa magni recusandae vitae nam quod animi, aliquam
-              obcaecati, aperiam et officiis, enim exercitationem eligendi
-              debitis! Fuga eveniet culpa facilis voluptatum vel quaerat
-              incidunt, commodi velit eaque corporis?
+              Welcome to my page and thanks for visiting! I am a backend
+              software engineer who has a developed a passion for web
+              development. I am open to work to help build your dream website
+              with a thoughtful, consultative, and highly customizable approach.
+              When I am not programming, I am playing pickleball, making music,
+              or hanging out with my family. Please get in touch with me using
+              the contact form below and also take a look at some of my
+              projects.
             </p>
 
             <div class="tab-titles">
@@ -136,12 +132,7 @@
           <div data-aos="fade-left" data-aos-delay="0">
             <i class="fas fa-code"></i>
             <h2>Web <br />Development</h2>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore
-              dolor esse, culpa id libero repellat sunt consectetur quia nisi
-              impedit molestiae dolorem aliquam tenetur? Itaque iure
-              voluptatibus labore adipisci reprehenderit?
-            </p>
+            <p>Creating responsive web pages to attract</p>
             <a href="#contact">Learn more</a>
           </div>
           <div data-aos="fade-left" data-aos-delay="200">
@@ -270,7 +261,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright &copy; Max Morgan 2023. All rights reserved</p>
+        <p>Copyright &copy; Max Morgan 2023. Vulcan Photo by: romana klee</p>
       </div>
     </div>
 
@@ -298,6 +289,21 @@
       function closemenu() {
         sidemenu.style.right = "-200px";
       }
+
+      // Cache DOM references for efficiency
+      let menuButton = document.querySelector(".fa-solid.fa-bars"); // replace with the actual class of your menu button
+
+      // When the user clicks anywhere on the page
+      document.addEventListener("click", function (event) {
+        // If the click is outside the sidemenu and not on the menu button
+        if (
+          !sidemenu.contains(event.target) &&
+          !menuButton.contains(event.target)
+        ) {
+          // Close the sidemenu
+          closemenu();
+        }
+      });
     </script>
     <script>
       const scriptURL =
