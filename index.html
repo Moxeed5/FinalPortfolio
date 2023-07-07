@@ -336,6 +336,14 @@
           // Close the sidemenu
           closemenu();
         }
+
+        // Get all the menu items
+        var menuItems = sidemenu.getElementsByTagName("a"); // replace 'a' with the correct tag if your menu items are not 'a' tags
+
+        // Add a click event listener to each menu item
+        for (var i = 0; i < menuItems.length; i++) {
+          menuItems[i].addEventListener("click", closemenu);
+        }
       });
     </script>
     <script>
